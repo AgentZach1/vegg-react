@@ -33,28 +33,28 @@ function Footer() {
         <section className='social-media'>
             <div className='social-media-wrap'>
                 <div className='footer-logo'>
-                    <Link to="/" className='social-logo'>
+                    <Link to="/vegginc" className='social-logo'>
                         VEGG <VeggIcon className='footer-subscription-heading' color='white'/>
                     </Link>
                 </div>
                 <small className='website-rights'>Vegg Inc. c 2020</small>
                 <div className='social-icons'>
                     <Link 
-                    to="/"
+                    to="/vegginc"
                     target='_blank'
                     aria-label='Instagram'
                     className='social-icon-link instagram'>
                         <FontAwesomeIcon icon={faInstagram}/>
                     </Link>
                     <Link 
-                    to="/"
+                    to="/vegginc"
                     target='_blank'
                     aria-label='LinkedIn'
                     className='social-icon-link linkedin'>
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </Link>
                     <Link 
-                    to="/"
+                    to="/vegginc"
                     target='_blank'
                     aria-label='Facebook'
                     className='social-icon-link facebook'>
