@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button } from './Button';
+//import { Button } from './Button';
 import './Footer.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faTwitter, faTypo3, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { VeggIcon } from './VeggIcon';
 
 
 
@@ -11,48 +12,32 @@ function Footer() {
   return (
     <div className='footer-container'>
         <section className='footer-subscription'>
+            <VeggIcon className='footer-subscription-heading' size={100} color='white'/>
             <p className='footer-subscription-heading'>
-                Join the Adventure newsletter to receive our best deals.
+                Get in contact with us
             </p>
             <p className='footer-subscription-text'>
-                You can unsub anytime.
+                29 West Main Street.
             </p>
-            <div className='input-areas'>
-                <form>
-                    <input className='footer-input' type='email' name='email' placeholder='Your Email'/>
-                    <Button buttonStyle='btn--outline'>Subscribe</Button>
-                </form>
-            </div>
+            <p className='footer-subscription-text'>
+                Pulaski, VA 24031
+            </p>
+            <p className='footer-subscription-text'>
+                540-599-7480
+            </p>
+            <p className='footer-subscription-text'>
+                cjournell@vegginc.com
+            </p>
+            
         </section>
-        <div className='footer-links'>
-            <div className='footer-link-wrapper'>
-                <div className='footer-link-items'>
-                    <h2>About Me</h2>
-                    <Link to='/sign-up'>How it works</Link>
-                    <Link to='/'>Testimonials</Link>
-                    <Link to='/services'>Services</Link>
-                    <Link to='/protected'>File Server</Link>
-                    <Link to='/playground'>Playground</Link>
-                </div>
-            </div>
-            <div className='footer-link-wrapper'>
-                <div className='footer-link-items'>
-                    <h2>Contact Me</h2>
-                    <Link to='/'>Instagram</Link>
-                    <Link to='/'>Snapchat</Link>
-                    <Link to='/'>Twitter</Link>
-                    <Link to='/'>Youtube</Link>
-                </div>
-            </div>
-        </div>
         <section className='social-media'>
             <div className='social-media-wrap'>
                 <div className='footer-logo'>
                     <Link to="/" className='social-logo'>
-                        TRVL <FontAwesomeIcon icon={faTypo3}/>
+                        VEGG <VeggIcon className='footer-subscription-heading' color='white'/>
                     </Link>
                 </div>
-                <small className='website-rights'>TRVL c 2020 (idc)</small>
+                <small className='website-rights'>Vegg Inc. c 2020</small>
                 <div className='social-icons'>
                     <Link 
                     to="/"
@@ -71,16 +56,9 @@ function Footer() {
                     <Link 
                     to="/"
                     target='_blank'
-                    aria-label='Twitter'
-                    className='social-icon-link twitter'>
-                        <FontAwesomeIcon icon={faTwitter}/>
-                    </Link>
-                    <Link 
-                    to="/"
-                    target='_blank'
-                    aria-label='Youtube'
-                    className='social-icon-link youtube'>
-                        <FontAwesomeIcon icon={faYoutube}/>
+                    aria-label='Facebook'
+                    className='social-icon-link facebook'>
+                        <FontAwesomeIcon icon={faFacebook}/>
                     </Link>
                 </div>
             </div>

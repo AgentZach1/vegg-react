@@ -1,0 +1,58 @@
+.pilot-container {
+    background: url('../images/jeff_school.jpg') center center/cover no-repeat;
+    color: #242424;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    margin-bottom: auto;
+}
+
+.pilot-container > h1 {
+    font-size: 80px;
+    margin: 200px;
+    align-self: auto;
+    color: #242424;
+    padding: 4px;
+    height: 50%;
+}
+
+.pilot-container > p {
+    background-color: white;
+    border: 2px solid #242424;
+    padding: 16px;
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 200px;
+}
+
+.research-container {
+    background: url('../images/cea_west_wing.jpeg') center center/cover no-repeat;
+    color: #242424;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    margin: auto;
+}
+
+.text-container {
+    background-color: white;
+    border: 2px solid #242424;
+    padding: 8px;
+    align-self: flex-end;
+    margin-right: 100px;
+    width: 30%
+}
+
+.text-container > h1 {
+    font-size: 40px;
+}

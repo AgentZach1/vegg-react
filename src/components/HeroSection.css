@@ -7,7 +7,7 @@ video {
 }
 
 .hero-container {
-    /* background: url('../images/websiteBackground.jpg') center center/cover no-repeat; */
+    background: url('../images/climate.jpeg') center center/cover no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -27,7 +27,12 @@ video {
 .hero-container > p {
     margin-top: 8px;
     color: white;
-    font-size: 32px;
+    background-color: rgb(3, 94, 30);
+    border: 2px solid black;
+    padding: 4px;
+    text-align: center;
+    font-size: 22px;
+    width: 80%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -57,7 +62,7 @@ video {
     }
 
     .hero-container > p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .btn-mobile {

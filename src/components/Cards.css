@@ -30,6 +30,8 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    border: 4px solid #242424;
+    background: rgb(197, 197, 197);
   }
   
   .cards__item__link {
@@ -66,7 +68,7 @@
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: #1f98f4;
+    background-color: darkgreen;
     box-sizing: border-box;
   }
   
@@ -97,6 +99,12 @@
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .cards__item__subtext {
+    color: #242424;
+    font-size: 16px;
+    line-height: 18px;
   }
   
   @media only screen and (min-width: 1200px) {

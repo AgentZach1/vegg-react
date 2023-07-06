@@ -6,12 +6,9 @@
   }
   
   .home,
-  .services,
-  .playground,
-  .sign-up,
-  .protected,
-  .butt,
-  .secret {
+  .pilotproject,
+  .ourteam,
+  .sign-up {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -19,57 +16,28 @@
     font-size: 3rem;
   }
   
-  .services {
-    background-image: url('./images/playgroundDarkBackground.jpg');
+  .pilotproject {
+    /* background-image: url('./images/playgroundDarkBackground.jpg'); */
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    background-repeat: repeat;
+    color: #242424;
+    font-size: 20px;
   }
 
-  .protected {
-    background-image: url('./images/playgroundDarkBackground.jpg');
+  .ourteam {
+    background-image: url('./images/greenhouse.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .playground {
-    background-image: url('./images/vaporWaveBackground.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-
-  .butt {
-    background-image: url('./images/vaporWaveBackground.jpg');
-    background-position: center;
-    background-size: fill;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
   }
    
   .sign-up {
-    background-image: url('./images/websiteBackground.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
   }
-
-  .secret {
-    background-image: url('./images/websiteBackground.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  

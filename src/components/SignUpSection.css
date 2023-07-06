@@ -1,0 +1,45 @@
+.sign-up-form {
+    height: 100%;
+    color: #242424;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    margin-bottom: auto;
+    background-image: url('../images/big-field.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sign-up-form > h1 {
+    font-size: 80px;
+    align-self: auto;
+    color: #242424;
+}
+
+.sign-up-form > form > ul > input, textarea {
+    padding: 10px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    margin: 20px;
+    border: 2px solid #242424;
+    background-color: darkgreen;
+    color: white;
+}
+
+.sign-up-form > form > ul > input[type="submit"] {
+    transition: transform 0.1s ease-in-out;
+}
+
+.sign-up-form > form > ul > input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+.sign-up-form > form > ul > input[type="submit"]:hover {
+    background-color: white;
+    color:#242424;
+}

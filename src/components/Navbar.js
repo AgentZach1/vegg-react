@@ -2,14 +2,21 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
-import { faTypo3 } from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css';
 import {Button} from './Button';
+import { VeggIcon } from './VeggIcon';
+import { useLocation } from 'react-router-dom';
 
 function Navbar() {
   const [click, setClick] = useState(false);
 
   const [button, setButton] = useState(true);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const handleClick = () => setClick(!click);
 
@@ -22,7 +29,7 @@ function Navbar() {
         setButton(true);
     }
   };
-
+  
   useEffect(() => {
     showButton();
   }, []);
@@ -34,7 +41,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    TRVL <FontAwesomeIcon icon={faTypo3} />
+                    VEGG <VeggIcon size={60}/>
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     <FontAwesomeIcon icon={click ? faTimes : faBars} />
@@ -46,17 +53,17 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                            Services
+                        <Link to='/pilotproject' className='nav-links' onClick={closeMobileMenu}>
+                            Our Pilot Project
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/playground' className='nav-links' onClick={closeMobileMenu}>
-                            Playground
+                        <Link to='/ourteam' className='nav-links' onClick={closeMobileMenu}>
+                            Our Team
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                        <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu} >
                             Sign Up
                         </Link>
                     </li>
@@ -68,4 +75,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;
