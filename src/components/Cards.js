@@ -4,7 +4,7 @@ import CardItemStatic from './CardItemStatic';
 import './Cards.css';
 import OnePagerPNG from '../images/onepager.png';
 import WhitePaperPNG from '../images/whitepaper.png';
-import WebsiteBackground from '../images/websiteBackground.jpg';
+import WebsiteBackground from '../images/big-field.jpg';
 import JeffSchool from '../images/jeff_school.jpg';
 import Greenhouse from '../images/greenhouse.jpg';
 
