@@ -14,9 +14,10 @@ function App() {
         <Navbar />
         <Routes>
          <Route path='/vegginc' element={<Home />}/>
-         <Route path='/pilotproject' element={<PilotProject />}/>
-         <Route path='/ourteam' element={<OurTeam />}/>
-         <Route path='/sign-up' element={<SignUp />}/>
+         <Route path='/vegginc/pilotproject' element={<PilotProject />}/>
+         <Route path='/vegginc/ourteam' element={<OurTeam />}/>
+         <Route path='/vegginc/sign-up' element={<SignUp />}/>
+         <Route path='/vegginc/*' element={<Home />}/>
         </Routes>
         
       </Router>

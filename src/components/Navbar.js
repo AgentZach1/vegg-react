@@ -53,17 +53,17 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/pilotproject' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/vegginc/pilotproject' className='nav-links' onClick={closeMobileMenu}>
                             Our Pilot Project
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/ourteam' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/vegginc/ourteam' className='nav-links' onClick={closeMobileMenu}>
                             Our Team
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu} >
+                        <Link to='/vegginc/sign-up' className='nav-links-mobile' onClick={closeMobileMenu} >
                             Sign Up
                         </Link>
                     </li>

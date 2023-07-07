@@ -13,7 +13,7 @@ export const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
 
     // Whatever you put inside the button will be rendered
     return (
-        <Link to='/sign-up' className='btn-mobile'>
+        <Link to='/vegginc/sign-up' className='btn-mobile'>
             <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}

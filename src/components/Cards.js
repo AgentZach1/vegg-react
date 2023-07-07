@@ -19,13 +19,13 @@ function Cards() {
                     src={Greenhouse} 
                     text='Learn about the team'
                     label='Our Team'
-                    path='/ourteam'
+                    path='/vegginc/ourteam'
                     />
                     <CardItem 
                     src={JeffSchool} 
                     text='Our Pilot Project: The Jefferson School'
                     label='Jefferson School'
-                    path='/pilotproject'
+                    path='/vegginc/pilotproject'
                     />
                 </ul>
                 <ul className='cards__items'>
@@ -45,7 +45,7 @@ function Cards() {
                     src={WebsiteBackground}
                     text='Get in contact with us'
                     label='Sign Up'
-                    path='/sign-up'
+                    path='/vegginc/sign-up'
                     />
                 </ul>
             </div>   
