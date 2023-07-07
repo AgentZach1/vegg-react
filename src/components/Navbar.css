@@ -94,7 +94,8 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: rgb(59, 124, 59);
+      border: 2px solid #242424;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -119,7 +120,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(15%, 20%);
     }
   
     .menu-icon {

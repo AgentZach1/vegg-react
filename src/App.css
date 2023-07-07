@@ -33,6 +33,13 @@
     color: #fff;
     font-size: 100px;
   }
+
+  
+@media screen and (max-width: 960px) {
+  .ourteam {
+    font-size: 80px;
+  }
+}
    
   .sign-up {
     background-position: center;

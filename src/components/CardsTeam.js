@@ -3,7 +3,8 @@ import CardItemStatic from './CardItemStatic';
 import './Cards.css';
 import Cody from '../images/cody_journell.jpg';
 import Luke from '../images/luke_allison.jpg';
-import Xander from '../images/alexander_yurista.jpg'
+import Xander from '../images/alexander_yurista.jpg';
+import Zach from '../images/ZachHeadshot.jpg';
 
 function CardsTeam() {
   return (
@@ -37,7 +38,7 @@ function CardsTeam() {
                     path='https://www.linkedin.com/in/alexander-yurista-3453b2232/'
                     />
                     <CardItemStatic 
-                    src='/ZachHeadshot.jpg' 
+                    src={Zach} 
                     text='Zachary Weiss'
                     subtext="Zach is an senior studying computer science at VT"
                     label='Intern'
