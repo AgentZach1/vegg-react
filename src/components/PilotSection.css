@@ -1,40 +1,76 @@
 .pilot-container {
-    background: url('../images/jeff_school.jpg') center center/cover no-repeat;
+    /* background: url('../images/jeff_school.jpg') center center/cover no-repeat; */
     color: #242424;
-    height: 100%;
-    width: 100%;
+    background-color: #242424;
+    /* height: 200%;
+    width: 100%; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     object-fit: contain;
     margin-bottom: auto;
 }
 
-.pilot-container > h1 {
+.pilot-container > .div-up {
+    background-color: #242424;
+    background: url('../images/big-field.jpg') center center/cover no-repeat;
+    height: 40%;
+    width: 100%;
+    border: 2px solid #242424;
+}
+
+.pilot-container > .div-up > h1 {
     font-size: 80px;
-    margin: 200px;
-    align-self: auto;
+    margin-top: -200px;
     color: #242424;
     padding: 4px;
-    height: 50%;
+    border: 2px solid #242424;
 }
 
-.pilot-container > p {
-    background-color: white;
+.pilot-container > .div-down {
+    background-color: #242424;
+    width: 90%;
     border: 2px solid #242424;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pilot-container > .div-down > img {
+    /* margin-left: 500px; */
+    width: 60%;
+    height: 60%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.pilot-container > .div-down > p {
+    color: white;
+    /* border: 2px solid #242424; */
     padding: 16px;
     text-align: center;
-    font-size: 18px;
-    width: 50%;
+    font-size: 22px;
+    width: 40%;
+    height: 150%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 200px;
+    /* margin-left: 300px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: 20px;
+    /* margin-right: 50px;
+    margin-top: 100px; */
 }
 
+
 .research-container {
-    background: url('../images/cea_west_wing.jpeg') center center/cover no-repeat;
+    background: #315337;
+    /* background: url('../images/cea_west_wing.jpeg') center center/cover no-repeat; */
     color: #242424;
-    height: 100vh;
+    border: 4px solid black;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -44,43 +80,99 @@
     margin: auto;
 }
 
-.text-container {
-    background-color: white;
-    border: 2px solid #242424;
+.research-container > .text-container {
+    background-color: #252323;
+    border: 2px solid black;
     padding: 8px;
-    align-self: flex-end;
-    margin-right: 100px;
-    width: 30%
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-.text-container > h1 {
+.research-container > .text-container > h1 {
     font-size: 40px;
+    color: white;
+}
+
+.research-container > .text-container > p {
+    font-size: 20px;
+    color: white;
+}
+
+.research-container > .pic-container > img{
+    border: 8px solid #242424;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 960px) {
-    .pilot-container > p {
-        background-color: white;
+    
+
+    .pilot-container > .div-up > h1 {
+        font-size: 50px;
+        margin-top: -50px;
+    }
+
+    .pilot-container > .div-down {
+        background-color: #242424;
+        width: 90%;
         border: 2px solid #242424;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pilot-container > .div-down > img {
+        width: 90%;
+        height: 90%;
+        border: 4px solid white;
+        margin-bottom: -60px;
+    }
+
+    .pilot-container > .div-down > p {
+        background-color: #242424;
         padding: 16px;
         text-align: center;
-        font-size: 16px;
-        width: 80%;
+        font-size: 20px;
+        width: 100%;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 100px;
+        margin-right: 0px;
     }
     
-    .text-container {
+    .research-container {
+        background: #315337;
+        /* background: url('../images/cea_west_wing.jpeg') center center/cover no-repeat; */
+        color: #242424;
+        border: 4px solid black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        object-fit: contain;
+    }
+
+    .research-container > .text-container {
         background-color: #242424;
         border: 2px solid white;
         color: white;
         padding: 4px;
-        align-self: flex-end;
-        margin-right: 20px;
+        align-self: center;
         width: 70%;
-        margin-bottom: -400px;
     }
     
-    .text-container > h1 {
-        font-size: 30px;
+    .research-container > .text-container > h1 {
+        font-size: 40px;
+    }
+
+    .research-container > .pic-container {
+        align-self: center;
+        width: 80%;
+    }
+
+    .research-container > .pic-container > img {
+        width: 100%;
     }
 }
